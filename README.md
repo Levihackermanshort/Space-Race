@@ -1,5 +1,7 @@
 # Space-Race
-Thw futuristic HTML5 & JavaScript racing game by The Pioneers with credits to BKcore for using Vehicle's design and audio
+The futuristic HTML5, JavaScript & WebGL racing game by The Pioneers with credits to BKcore for using Vehicle's design and audio (effects for the spaceship and damage/crash sound. Come challenge your friends on this fast-paced 3D game!
+
+Here is the different colour options of the spaceship:
 
 ![icon_45 png](https://github.com/user-attachments/assets/11e37391-c432-4036-a1d4-b6c96e4f97fe)
 
