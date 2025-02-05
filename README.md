@@ -8,3 +8,6 @@ Thw futuristic HTML5 & JavaScript racing game by The Pioneers with credits to BK
 ![icon_47 png](https://github.com/user-attachments/assets/18742e84-6e6d-4014-8a05-13825911a622)
 
 ![icon_256](https://github.com/user-attachments/assets/d6282d1b-a84c-4705-8a2d-9c85bfd13b60)
+
+Break down of the hip mode:
+![diffuse](https://github.com/user-attachments/assets/f99e6ad3-4347-4f22-836d-2f65bdaa253c)
