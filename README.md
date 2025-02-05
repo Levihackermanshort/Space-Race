@@ -23,3 +23,20 @@ For the Cityscape these designs were used:
 ![diffuse](https://github.com/user-attachments/assets/5980d432-9b0e-4ca3-87ee-976d9b4025de)
 ![collision](https://github.com/user-attachments/assets/7c79d65c-c7ca-4e96-9eba-10c8551a6bab)
 
+
+
+For the HP and Shield of the spaceship these were the designs:
+
+![hud-fg-speed](https://github.com/user-attachments/assets/020d80a2-0531-4b81-a938-656b2ab165e7)
+![hud-fg-shield](https://github.com/user-attachments/assets/ca56c50b-0f0d-4665-aa97-fab547494602)
+![hud-bg](https://github.com/user-attachments/assets/f16bcde2-c28d-48c3-b19f-dda031f2772d)
+
+Also part of the textures is of course the particles that can be seen in the game steamed from the spaceship:
+![spark](https://github.com/user-attachments/assets/37739041-d049-48f0-8397-2732ef0da962)
+![spark - Copie](https://github.com/user-attachments/assets/c6a1b932-c874-4fba-badb-2aebae9482e9)
+![damage](https://github.com/user-attachments/assets/9bf65feb-be53-4945-a859-7b1b5c4682ef)
+![cloud](https://github.com/user-attachments/assets/4562f9b2-848a-462c-b668-e369672d707c)
+![cloud - Copie](https://github.com/user-attachments/assets/2f6a3f55-8468-4fbb-a58c-1f23ae8a0daf)
+
+
+
