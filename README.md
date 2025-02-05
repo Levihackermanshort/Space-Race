@@ -38,5 +38,21 @@ Also part of the textures is of course the particles that can be seen in the gam
 ![cloud](https://github.com/user-attachments/assets/4562f9b2-848a-462c-b668-e369672d707c)
 ![cloud - Copie](https://github.com/user-attachments/assets/2f6a3f55-8468-4fbb-a58c-1f23ae8a0daf)
 
+For the CSS design there is one designated for Mobile player and PC players, here it is:
+PC:
+![help-0](https://github.com/user-attachments/assets/77a37f37-9953-4af5-bae5-cf13b5c35de5)
 
+Mobile:
+![help-1](https://github.com/user-attachments/assets/6b464f29-4841-4623-a47a-2d8f8de43aee)
+![mobile](https://github.com/user-attachments/assets/a069575b-8758-44d5-a3ae-4ce4538131a6)
+
+
+Controls:
+
+![mobile-controls-1](https://github.com/user-attachments/assets/731f070f-0aba-4366-8697-547b9a5a97bd)
+![mobile-over](https://github.com/user-attachments/assets/a4a94ba0-2047-4874-8679-bddb68907985)
+![mobile-controls-2](https://github.com/user-attachments/assets/427eb2e3-0670-4f3e-89e1-e521e23517f7)
+
+Buildings/Game Enviroment layout:
+![bg](https://github.com/user-attachments/assets/f549c8ab-556c-4634-95c0-3430f6be03c0)
 
