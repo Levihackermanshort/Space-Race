@@ -63,16 +63,25 @@
     a = s[_i];
     _fn(a);
   }
+$('start').onclick = function() {
+    $('step-1').style.display = 'none';
+    $('step-2').style.display = 'block';
+    document.getElementById('logo').style.display = 'none'; // Hide the logo when game starts
+    $('step-2').style.backgroundImage = "url(css/help-" + s[0][3] + ".png)";
+    
+    // Ensure proper transition to step-3
+    setTimeout(function() {
+        $('step-2').style.display = 'none';
+        $('step-3').style.display = 'block';
+        init(s[0][3], s[1][3], s[2][3], s[3][3]); // Start the game
+    }, 1000); // Delay transition by 1 second for smoothness
+};
 
-  $('step-2').onclick = function() {
-    $('step-2').style.display = 'none';
-    $('step-3').style.display = 'block';
-    return init(s[0][3], s[1][3], s[2][3], s[3][3]);
-  };
-
-  $('step-5').onclick = function() {
+$('step-5').onclick = function() {
+    document.getElementById('logo').style.display = 'block'; // Show logo when restarting
     return window.location.reload();
-  };
+};
+
 
   $('s-credits').onclick = function() {
     $('step-1').style.display = 'none';
