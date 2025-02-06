@@ -1,4 +1,7 @@
 # Space-Race
+Group Project name: The Pioneers:
+![ThePioneers png](https://github.com/user-attachments/assets/5021abbb-c6f5-4b23-af7c-868467052dc5)
+
 The futuristic HTML5, JavaScript & WebGL racing game by The Pioneers with credits to BKcore for using Vehicle's design and audio (effects for the spaceship and damage/crash sound. Come challenge your friends on this fast-paced 3D game!
 
 Here is the different colour options of the spaceship:
