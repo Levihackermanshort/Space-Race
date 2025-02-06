@@ -83,12 +83,29 @@
       <p><b>Track texture</b><br>Nobiax</p>
       <h4>Click anywhere to continue.</h4>
     </div>
+    <script src="libs/leap-0.4.1.min.js"></script>
+    <script src="libs/Three.dev.js"></script>
+    <script src="libs/ShaderExtras.js"></script>
+    <script src="libs/postprocessing/EffectComposer.js"></script>
+    <script src="libs/postprocessing/RenderPass.js"></script>
+    <script src="libs/postprocessing/BloomPass.js"></script>
+    <script src="libs/postprocessing/ShaderPass.js"></script>
+    <script src="libs/postprocessing/MaskPass.js"></script>
+    <script src="libs/Detector.js"></script>
+    <script src="libs/Stats.js"></script>
+    <script src="libs/DAT.GUI.min.js"></script>
+    <script src="bkcore/hexgl/HexGL.js"></script>
+    <script src="launch.js"></script>
     <script>
       document.getElementById('start').onclick = function() {
         document.body.classList.add('game-active');
         document.getElementById('logo').style.display = 'none';
         document.getElementById('step-1').style.display = 'none';
         document.getElementById('step-2').style.display = 'block';
+      };
+      document.getElementById('ctrl-help').onclick = function() {
+        document.getElementById('step-2').style.display = 'none';
+        document.getElementById('step-3').style.display = 'block';
       };
       document.getElementById('step-5').onclick = function() {
         document.body.classList.remove('game-active');
