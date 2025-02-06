@@ -7,11 +7,12 @@
     <meta property="og:title" content="Space Race, the HTML5 futuristic racing game." />
     <meta property="og:type" content="game" />
     <meta property="og:url" content="http://hexgl.bkcore.com/" />
-    <meta property="og:image" content="title.png" />
+    <meta property="og:image" content="http://hexgl.bkcore.com/image.png" />
+    <meta property="og:site_name" content="HexGL by BKcore" />
     <meta property="og:site_name" content="Space Race by The Pioneers" />
     <meta property="fb:admins" content="1482017639" />
-    <link rel="icon" href="title.png" type="image/png">
-    <link rel="shortcut icon" href="title.png" type="image/png">
+    <link rel="icon" href="http://hexgl.bkcore.com/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="http://hexgl.bkcore.com/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/multi.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
@@ -39,25 +40,10 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-      #logo {
-    display: block; /* Logo is visible in the menu */
-}
-.game-active #logo {
-    display: none; /* Hide logo when game starts */
-}
     </script>
   </head>
 
   <body>
-    <div id="logo" style="
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;">
-        <img src="title.png" alt="The Pioneers Logo" width="300px">
-    </div>
-
     <div id="step-1">
       <div id="global"></div>
       <div id="title">
@@ -73,7 +59,6 @@
         </div>
       </div>
     </div>
-
     <div id="step-2" style="display: none">
       <div id="ctrl-help">Click/Touch to continue.</div>
     </div>
