@@ -29,9 +29,6 @@
         width: 100%;
       }
     </style>
-    <style>
-</style>
-
     <script type="text/javascript">
     //analytics
     var _gaq = _gaq || [];
@@ -42,16 +39,19 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-</script>
-
     </script>
   </head>
 
   <body>
-    <div id="logo">
-    <img src="title.png" alt="The Pioneers Logo" width="300px">
-</div>
-    
+    <div id="logo" style="
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;">
+        <img src="title.png" alt="The Pioneers Logo" width="300px">
+    </div>
+
     <div id="step-1">
       <div id="global"></div>
       <div id="title">
