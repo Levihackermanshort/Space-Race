@@ -17,37 +17,63 @@
     <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
     <style>
       body {
-        padding: 0;
-        margin: 0;
+        padding:0;
+        margin:0;
       }
-      canvas { pointer-events: none; width: 100%; }
-      #overlay {
+      canvas { pointer-events:none; width: 100%;}
+      #overlay{
         position: absolute;
         z-index: 9999;
         top: 0;
         left: 0;
         width: 100%;
       }
-      #logo {
-        display: block;
+    </style>
+    <style>
+    #logo {
+        display: block; /* Logo is visible in the menu */
         position: absolute;
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1000;
-      }
-      .game-active #logo {
-        display: none;
-      }
-    </style>
+    }
+    .game-active #logo {
+        display: none; /* Hide logo when game starts */
+    }
+</style>
+
+    <script type="text/javascript">
+    //analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26274524-4']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    <script type="text/javascript">
+    #logo {
+    display: block; /* Logo is visible in the menu */
+}
+.game-active #logo {
+    display: none; /* Hide logo when game starts */
+}
+</script>
+
+    </script>
   </head>
+
   <body>
     <div id="logo">
-      <img src="title.png" alt="The Pioneers Logo" width="300px">
-    </div>
+    <img src="title.png" alt="The Pioneers Logo" width="300px">
+</div>
+    
     <div id="step-1">
       <div id="global"></div>
-      <div id="title"></div>
+      <div id="title">
+      </div>
       <div id="menucontainer">
         <div id="menu">
           <div id="start">Start</div>
@@ -59,6 +85,7 @@
         </div>
       </div>
     </div>
+
     <div id="step-2" style="display: none">
       <div id="ctrl-help">Click/Touch to continue.</div>
     </div>
@@ -83,6 +110,9 @@
       <p><b>Track texture</b><br>Nobiax</p>
       <h4>Click anywhere to continue.</h4>
     </div>
+
+    <div id="leapinfo" style="display: none"></div>
+
     <script src="libs/leap-0.4.1.min.js"></script>
     <script src="libs/Three.dev.js"></script>
     <script src="libs/ShaderExtras.js"></script>
@@ -94,24 +124,34 @@
     <script src="libs/Detector.js"></script>
     <script src="libs/Stats.js"></script>
     <script src="libs/DAT.GUI.min.js"></script>
+
+    <script src="bkcore.coffee/controllers/TouchController.js"></script>
+    <script src="bkcore.coffee/controllers/OrientationController.js"></script>
+    <script src="bkcore.coffee/controllers/GamepadController.js"></script>
+
+    <script src="bkcore.coffee/Timer.js"></script>
+    <script src="bkcore.coffee/ImageData.js"></script>
+    <script src="bkcore.coffee/Utils.js"></script>
+
+    <script src="bkcore/threejs/RenderManager.js"></script>
+    <script src="bkcore/threejs/Shaders.js"></script>
+    <script src="bkcore/threejs/Particles.js"></script>
+    <script src="bkcore/threejs/Loader.js"></script>
+
+    <script src="bkcore/Audio.js"></script>
+
+    <script src="bkcore/hexgl/HUD.js"></script>
+    <script src="bkcore/hexgl/RaceData.js"></script>
+    <script src="bkcore/hexgl/ShipControls.js"></script>
+    <script src="bkcore/hexgl/ShipEffects.js"></script>
+    <script src="bkcore/hexgl/CameraChase.js"></script>
+    <script src="bkcore/hexgl/Gameplay.js"></script>
+
+    <script src="bkcore/hexgl/tracks/Cityscape.js"></script>
+
     <script src="bkcore/hexgl/HexGL.js"></script>
+
     <script src="launch.js"></script>
-    <script>
-      document.getElementById('start').onclick = function() {
-        document.body.classList.add('game-active');
-        document.getElementById('logo').style.display = 'none';
-        document.getElementById('step-1').style.display = 'none';
-        document.getElementById('step-2').style.display = 'block';
-      };
-      document.getElementById('ctrl-help').onclick = function() {
-        document.getElementById('step-2').style.display = 'none';
-        document.getElementById('step-3').style.display = 'block';
-      };
-      document.getElementById('step-5').onclick = function() {
-        document.body.classList.remove('game-active');
-        document.getElementById('logo').style.display = 'block';
-        window.location.reload();
-      };
-    </script>
+
   </body>
 </html>
