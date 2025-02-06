@@ -29,6 +29,20 @@
         width: 100%;
       }
     </style>
+    <style>
+    #logo {
+        display: block; /* Logo is visible in the menu */
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+    .game-active #logo {
+        display: none; /* Hide logo when game starts */
+    }
+</style>
+
     <script type="text/javascript">
     //analytics
     var _gaq = _gaq || [];
@@ -39,33 +53,23 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-      #logo {
+    <script type="text/javascript">
+    #logo {
     display: block; /* Logo is visible in the menu */
 }
 .game-active #logo {
     display: none; /* Hide logo when game starts */
 }
+</script>
 
     </script>
   </head>
 
   <body>
-    <div id="logo" style="
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;">
-        <img src="title.png" alt="The Pioneers Logo" width="300px">
-      #logo {
-    display: block; /* Logo is visible in the menu */
-}
-.game-active #logo {
-    display: none; /* Hide logo when game starts */
-}
-
-    </div>
-
+    <div id="logo">
+    <img src="title.png" alt="The Pioneers Logo" width="300px">
+</div>
+    
     <div id="step-1">
       <div id="global"></div>
       <div id="title">
