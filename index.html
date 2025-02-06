@@ -39,6 +39,13 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+      #logo {
+    display: block; /* Logo is visible in the menu */
+}
+.game-active #logo {
+    display: none; /* Hide logo when game starts */
+}
+
     </script>
   </head>
 
